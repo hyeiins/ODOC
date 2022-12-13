@@ -13,9 +13,9 @@ function getIndexToIns(arr, num) {
     // code to sort arr elements
 
     // 1. sort with compare function
-    arr.sort(function(a, b){
-        return a-b
-    });
+    // arr.sort(function(a, b){
+    //     return a-b
+    // });
     
     // 2. loop through array and find the number to fit in
     // if num is bigger than arr[0] and still bigger than arr[1] then index up
@@ -85,13 +85,29 @@ function getIndexToIns(arr, num) {
     
     // refactor getting index
     
-    for(var i = 0; i < arr.length; i++) {
-        if(num <= arr[i]) {
-            return i
-        } 
-    }
+    // for(var i = 0; i < arr.length; i++) {
+    //     if(num <= arr[i]) {
+    //         return i
+    //     } 
+    // }
     
-    return arr.length;
+    // return arr.length;
+    
+    //we can add the element in anywhere and then sort it and get the index as well
+    
+    arr.push(num);
+    
+    // arr.sort(function(a, b) {
+    //     return a-b
+    // });
+    
+    // return arr.indexOf(num);
+    
+    // make it simpler
+    
+    return arr.sort(function(a, b) {
+        return a-b
+    }).indexOf(num);
 }
 
 console.log(getIndexToIns([40, 60], 50)); //should return 1
