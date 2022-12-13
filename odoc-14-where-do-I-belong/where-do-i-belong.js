@@ -49,7 +49,11 @@ function getIndexToIns(arr, num) {
     // }
     
     //refactor 1
-
+    // make it simpler, just need to get the number that is smaller than the number in array
+    // so it will if number is less than or equal to the array element, then splice the number in to that index.
+    // if number is bigger than any other elements in the array, or no elements in array it will push the number to the at the end of element
+    // So it does not ned to be seapartely handled.
+    
     // for(var i = 0; i < arr.length; i ++) {
     //     if(num <= arr[i]) {
     //         arr.splice(i, 0, num)
