@@ -14,9 +14,9 @@
 function frankenSplice(arr1, arr2, n) {
     // 2. declare new array to store the final array
     // 3. When u copy the arr2, it should not change original arr2 - pass by reference
-    // by converting arr2 to string first, it will copy the arr2 as pass by value
+    // by converting arr2 to string first, it will copy the arr2 as  pass by value
     // and by converting back the string arr2 into json, it will go back to a array value
-    // As arr2 is string, it will be passed by value and it will not affect to original arr2 
+    // As arr2 is string, it will be passed by value and it will not affect to original arr2
     // when we change the value of new finalArr.
     let finalArr = JSON.parse(JSON.stringify(arr2));
     
