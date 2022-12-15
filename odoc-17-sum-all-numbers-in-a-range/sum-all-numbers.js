@@ -18,15 +18,15 @@ function sumAll(arr) {
     
     //2
     // 1. get minimum and maximum value of the array values
-    // let maxNum = Math.max(arr[0], arr[1])
-    // let minNum = Math.min(arr[0], arr[1])
+    let maxNum = Math.max(arr[0], arr[1])
+    let minNum = Math.min(arr[0], arr[1])
     
-    // let initial = 0;
-    // for(var i = minNum; i <= maxNum; i++) {
-    //     initial = initial + i; 
-    // }
+    let initial = 0;
+    for(var i = minNum; i <= maxNum; i++) {
+        initial = initial + i; 
+    }
     
-    // return initial;
+    return initial;
 }
 
 console.log(sumAll([1, 4]));
