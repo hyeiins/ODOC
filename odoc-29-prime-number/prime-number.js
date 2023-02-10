@@ -7,16 +7,15 @@
 
 function sumPrimes(num) {
     // function to check whether the single number is prime
-    function isPrime(num) {
+    function isPrime(val) {
         // the number just need to check whether the number below square root of number 
         // will have no remainders
         // if it has remainder, it will return the true, 
         // and if it does not have remainder, it will return the false
-        const sqrt = Math.sqrt(num);
-
+        const sqrt = Math.sqrt(val);
         // loop through numbers below the square root number 
         for (let i = 2; i <= sqrt; i++) {
-            if (num % i === 0) {
+            if (val % i === 0) {
                 return false;
             }
         }
